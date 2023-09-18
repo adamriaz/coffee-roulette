@@ -22,7 +22,11 @@
             <x-text-input id="name" name="name" type="text" class="mt-1 block w-full" :value="old('name', $user->name)" required autofocus autocomplete="name" />
             <x-input-error class="mt-2" :messages="$errors->get('name')" />
         </div>
-
+        <div>
+            <x-input-label for="organisation" :value="__('Organisation')" />
+            <x-text-input id="organisation" name="organisation" type="text" class="mt-1 block w-full" :value="old('organisation', $user->organisation)" required autofocus autocomplete="organization" />
+            <x-input-error class="mt-2" :messages="$errors->get('organisation')" />
+        </div>
         <div>
             <x-input-label for="email" :value="__('Email')" />
             <x-text-input id="email" name="email" type="email" class="mt-1 block w-full" :value="old('email', $user->email)" required autocomplete="username" />

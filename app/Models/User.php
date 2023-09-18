@@ -15,12 +15,6 @@ class User extends Authenticatable implements MustVerifyEmail
     use HasApiTokens, HasFactory, Notifiable;
 
     /**
-     * The attributes that are custom assignable
-     * @var array<int, string>
-     */
-    protected $appends = ['organisation'];
-
-    /**
      * The attributes that are mass assignable.
      *
      * @var array<int, string>
