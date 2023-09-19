@@ -48,7 +48,7 @@ class User extends Authenticatable implements MustVerifyEmail
     ];
 
     public function meetings(): BelongsToMany {
-        return $this->belongsToMany(Meeting::class)->withTimestamps();
+        return $this->belongsToMany(Meeting::class)->withTimestamps()->as('meeting_user');
     }
 
     public function getOrganisation() {
