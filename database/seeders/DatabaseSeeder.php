@@ -12,6 +12,7 @@ class DatabaseSeeder extends Seeder
 {
     /**
      * Seed the application's database.
+     * Use your own email addresses to check for email notifications for each user
      */
     public function run(): void
     {

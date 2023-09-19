@@ -8,6 +8,12 @@ use Illuminate\Support\Facades\Mail;
 
 class EmailService
 {
+    /**
+     * Sends email using a Meeting item and the email addresses of the users.
+     * @param int $meetingId
+     * 
+     * @return void
+     */
     public function notifyMeeting(int $meetingId)
     {
         try {

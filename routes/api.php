@@ -19,6 +19,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/meeting/add', [MeetingController::class, 'add'])->name('meeting.add');
-Route::post('/meeting/add-user', [MeetingController::class, 'addUser'])->name('meeting.addUser');
-Route::post('/meeting/remove-user', [MeetingController::class, 'removeUser'])->name('meeting.removeUser');
+/**
+ * Used to manually add meetings
+ * Route::post('/meeting/add', [MeetingController::class, 'add'])->name('meeting.add');
+ * Route::post('/meeting/add-user', [MeetingController::class, 'addUser'])->name('meeting.addUser');
+ * Route::post('/meeting/remove-user', [MeetingController::class, 'removeUser'])->name('meeting.removeUser');
+*/
