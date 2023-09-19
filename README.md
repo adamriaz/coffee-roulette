@@ -53,6 +53,9 @@ MAIL_ENCRYPTION=tls
 MAIL_FROM_ADDRESS="${MAIL_USERNAME}"
 MAIL_FROM_NAME="${APP_NAME}"
 
+MAILGUN_DOMAIN="sandbox1234.mailgun.org"
+MAILGUN_SECRET="YOUR API KEY"
+
 ```
 
 Use the .env.example file for references
